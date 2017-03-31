@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="validate3.js"></script>
+	<title>Індивідуальне завдання</title>
+</head>
+<body>
+	<style type="text/css">
+		fieldset {
+			width: 400px;
+			margin: auto;
+			padding: 10px;
+			padding-bottom: 20px;
+		}
+
+		legend {
+			text-align: center;
+			padding: 15px 5px;
+		}
+
+		 label {
+		 	padding-right: 10px;
+		 	width: 150px;
+		 	float: left;
+			text-align: right;
+		}
+
+		.submit {
+			position: relative;
+			left: 160px;
+			padding: 5px;
+			margin-top: 10px;
+		}
+
+		#p,#p2 {
+			margin: 10px;
+			color: red;
+		}	
+
+		#p {
+			padding-left: 165px;
+		}	
+		}
+	</style>
+
+	<form action="success.html" method="get" onsubmit="return validate()">
+		<fieldset>
+			<legend>Форма авторизації</legend>
+				<label for="login">Введіть логін:</label>
+				<input type="text" name="log" id="login" autofocus><br>
+				<p id="p"></p>
+
+				<label for="pass">Введіть пароль:</label>
+				<input type="password" name="password" id="pass">
+				<p id="p2"></p>
+
+				<input type="submit" name="sub" value="Залогінитись" class="submit">
+		</fieldset>	
+	</form>
+
+</body>
+</html>
